@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url("https://fonts.google.com/specimen/Hanken+Grotesk");
+}
+
+
+* {
+    margin:0px;
+    padding:0px;
+    font-family: 'Hanken Grotesk';
+}
+
+.screen {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height:512px;
+    width:738px;
+    border-radius: 45px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    box-shadow: 1px 31px 80px -30px hsl(241, 100%, 89%);;
+}
+
+.result {
+    grid-area: 1/1/1/1;
+    border-radius:45px;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    z-index: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.your {
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: hsl(241, 100%, 89%);
+    padding-top: 10px;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    /* background-color: hsla(241, 72%, 46%, 0); */
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    /* background-color: hsl(241, 81%, 54%); */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.react {
+    height:70px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+
+.para1 {
+    height: 122px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+}
+
+.p2 {
+    width:100%;
+    padding:0px 65px;
+}
+
+#marks {
+    font-size:80px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+#outof {
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+}
+
+.summary {
+    grid-area: 1/1/2/3;
+    background-color: white;
+    border-radius:45px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.summary2 {
+    height:100%;
+    width: 289px;
+    margin-right: 40px;
+    /* background-color: yellowgreen; */
+    border-radius:45px;
+    display:flex;
+    flex-direction: column;
+}
+
+.sum {
+    height: 76px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 22px;
+}
+
+.sum_result {
+    height:264px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box {
+    height:57px;
+    width:100%;
+    border-radius: 12px;
+    background-color: darkorange;
+    color:white;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%,0.1);
+}
+
+.reaction svg {
+    padding:0px 10px;
+}
+
+#react {
+    margin-right: 105px;
+}
+
+#react_marks {
+    color: black;
+    font-weight:700;
+}
+
+#react_outof {
+    color: rgba(0,0,0,0.5);
+}
+
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%,0.1);
+}
+
+.memory svg {
+    padding:0px 10px;
+}
+
+#memo {
+    margin-right: 109px;
+}
+
+#memo_marks {
+    color: black;
+    font-weight:700;
+}
+
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%,0.1);
+}
+
+.verbal svg {
+    padding:0px 10px;
+}
+
+#verb {
+    margin-right: 123px;
+}
+
+#verb_marks {
+    color: black;
+    font-weight:700;
+}
+
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%,0.1);
+}
+
+.visual svg {
+    padding:0px 10px;
+}
+
+#vis {
+    margin-right: 126px;
+}
+
+#vis_marks {
+    color: black;
+    font-weight:700;
+}
+
+.cont {
+    height:150px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    height: 60px;
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+
+@media screen and (max-width:376px){
+    * {
+        font-size:15px;
+    }
+
+
+    .container {
+        height:100vh;
+        width:100vw;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* box-shadow: 1px 31px 80px -30px hsl(241, 100%, 89%); */
+    }
+
+    .result {
+        grid-area: 1/1/1/1;
+        height:355px;
+        border-bottom-left-radius :45px;
+        border-bottom-right-radius :45px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        z-index: 1;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .summary {
+        grid-area: 2/1/3/2;
+        height:454px;
+        background-color: white;
+        border-radius:45px;
+        display:flex;
+        flex-direction: column;
+        justify-content: end;
+        /* align-items: end; */
+    }
+
+    .your {
+        height:65px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 700;
+        color: hsl(241, 100%, 89%);
+        padding-top: 0px;
+    }
+
+    .your p {
+        font-size:18px;
+    }
+    
+    .circle {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        /* background-color: hsla(241, 72%, 46%, 0); */
+        background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+        /* background-color: hsl(241, 81%, 54%); */
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 00px;
+    }
+
+    #marks {
+        font-size: 55px;
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+    }
+
+    .react {
+        height:20px;
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size:10px;
+        font-weight: 500;
+        color: hsl(0, 0%, 100%);
+    }
+}
